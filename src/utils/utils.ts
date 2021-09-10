@@ -418,6 +418,7 @@ export const orderFromJSON = (order: any): Order => {
     createdTime: new BigNumber(Math.round(createdDate.getTime() / 1000)),
     listingTime: new BigNumber(order.listing_time),
     expirationTime: new BigNumber(order.expiration_time),
+    closingDate: order.closing_date,
 
     salt: new BigNumber(order.salt),
     v: parseInt(order.v),

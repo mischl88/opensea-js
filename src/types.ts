@@ -591,6 +591,7 @@ export interface Order extends UnsignedOrder, Partial<ECSignature> {
   feeRecipientAccount?: OpenSeaAccount
   cancelledOrFinalized?: boolean
   markedInvalid?: boolean
+  closingDate?: string
   asset?: OpenSeaAsset
   assetBundle?: OpenSeaAssetBundle
 }
